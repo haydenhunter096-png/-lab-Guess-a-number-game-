@@ -8,24 +8,18 @@ int main() {
     int guess = 0;
     int turns = 0;
 
-    // Seed the random number generator
+   
     srand(time(NULL));
 
-    // Generate a number between 1 and 100
     secretNumber = (rand() % 100) + 1;
 
-    // Ask for user's name
-    printf("Hi, what is your name? ");
+    printf("Hello, what do you go by? ");
     scanf("%s", name);
 
-    printf("Nice to meet you %s. Let's play a game!\n", name);
+    printf("Nice to meet you %s. Let's play a guessing game!\n", name);
 
-    // Uncomment this line while testing
-    // printf("DEBUG: secret number is %d\n", secretNumber);
-
-    // Game loop
     while (guess != secretNumber) {
-        printf("Please guess a number: ");
+        printf("Guess a number: ");
         scanf("%d", &guess);
 
         turns++;
