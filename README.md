@@ -1,27 +1,37 @@
-#Lab-Guess-a-number-game-
-#lgorithm
+# Lab: Guess a Number Game
 
-#1. Start the program.
-#2. Ask the user for their name.
-#3. Store the name in a string.
-#4. Generate a random number between 1 and 100.
-#5. Set the number of turns to 0.
-#6. Set the guess to 0.
-#7. While the guess is not equal to the random number:
-    a. Ask the user to guess a number.
-    b. Read the user's guess.
-    c. Add 1 to the turn counter.
-    d. If the guess is greater than the random number:
-        - Print "Too high".
-    e. Else if the guess is less than the random number:
-        - Print "Too low".
-    f. Else:
-        - Print "You got it!".
-#8. Print the total number of turns.
-#9. If the number of turns is less than 7:
-    - Print "Very good performance".
-#10. Else if the number of turns is equal to 7:
-    - Print "Average performance".
-#11. Else:
-    - Print "Poor performance".
-#12. End the program.
+## Algorithm
+
+1. **Start the program.**  
+
+
+2. **Ask the user for their name** and store it in a string.  
+
+
+3. **Generate a random number** between 1 and 100.  
+
+
+4. **Initialize variables:**  
+   - `turns` = 0  
+   - `guess` = 0  
+
+
+5. **Game loop:** Repeat while `guess` is not equal to the random number:  
+   a. Ask the user to guess a number.  
+   b. Read the user's input into `guess`.  
+   c. Increment `turns` by 1.  
+   d. Give feedback:  
+      - If `guess` > random number → print `"Too high"`  
+      - Else if `guess` < random number → print `"Too low"`  
+      - Else → print `"You got it!"` 
+
+
+6. **After the loop ends:**  
+   - Print the total number of turns.  
+   - Print performance feedback based on the number of turns:  
+     - `turns` < 7 → `"Very good performance"`  
+     - `turns` = 7 → `"Average performance"`  
+     - `turns` > 7 → `"Poor performance"` 
+     
+      
+7. **End the program.**
